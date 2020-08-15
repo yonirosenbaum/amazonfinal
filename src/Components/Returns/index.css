@@ -1,0 +1,99 @@
+.returnsAndOrders__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.returnsAndOrders{
+    margin: 2rem auto;
+    border: black 2px solid;
+    border-radius: 6px;
+    /*padding: 40px;
+    padding-top: 0px;*/
+}
+.returnsAndOrders__Selectors{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0px solid black;
+    background: #131921;
+    color: white;
+    /*margin-bottom: 15px;*/
+    /* #f0c14b */
+}
+.returnsAndOrders__Selector{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    opacity: 0.7;
+}
+.active{
+    animation-name: colorActive;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    background: #f0c14b;
+    color: white;
+    text-shadow: 1px 1px #846a29;
+}
+@keyframes colorActive{
+    0% {background: #131921;}
+    100% {
+        background: #ba8a0f;
+      opacity: 1;
+      border-radius: 4px;
+      color: white;
+    }
+}
+.returnsAndOrders__Selector:nth-of-type(1){
+    margin-right: 4px;
+    background-color: #131921;
+    border-right: 0px solid white;
+    width: 50%;
+}
+form{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.returns__labelFormWrapper{
+display: flex;
+flex-direction: column;
+}
+.returns__labelFormWrapper:nth-of-type(2){
+    margin-top: 20px;
+}
+.returns__labelFormWrapper:nth-of-type(3){
+    margin-top: 20px;
+}
+.returns__label{
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.returnsAndOrders__submit{
+    margin: 15px auto;
+    margin-bottom: 0px;
+    padding: 6px;
+    font-weight: 600;
+    border: 1px solid;
+    border-color:#a88734 #9c7e31 #846a29;
+    background: #f0c14b;
+    font-weight: 600;
+}
+.returnsAndOrders__success{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 15px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px #846a29;
+    background: #f0c14b;
+    display: none;
+}
+.returnsAndOrders__successEmail{
+    color: white;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px #846a29;
+    margin-left: 4px;
+}

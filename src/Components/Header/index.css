@@ -1,0 +1,63 @@
+.header{
+   background: #131921;
+   display: flex;
+   align-items: center;
+   position: sticky;
+   top: 0;
+   z-index: 50;
+}
+.header__logo{
+    width: 100px;
+    margin: 0 18px;
+    margin-top: 18px;
+    /* Ensures the aspect ratio always stays
+    the same so it doesn't get stretched*/
+    object-fit: contain;
+}
+.header__search{
+    display: flex;
+    flex: 1;
+}
+.header__searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header__searchIcon{
+    background: #cd9042;
+    padding: 5px;
+    height: 22px !important;
+}
+.header__tags{
+    display: flex;
+    /* If the page grows all the components grow evenly*/
+    justify-content: space-evenly;
+}
+.header__tag{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+.header__tag p{
+    margin: 0;
+  }
+.header__link{
+    color: #fff;
+    text-decoration: none;
+}
+.header__tagLineOne{
+    font-size: 10px;
+}
+.header__tagLineTwo{
+    font-size: 13px;
+    font-Weight: 800;
+}
+.header__tagCheckout{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.header__cartCounter{
+    margin: auto 5px;
+}

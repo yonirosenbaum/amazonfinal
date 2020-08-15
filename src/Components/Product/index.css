@@ -1,0 +1,39 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: #fff;
+    margin: 10px;
+    align-items:center;
+}
+.product__info{
+    height: 100px;
+    margin-bottom: 16px;
+}
+.product__price{
+    margin-top:8px;
+}
+.product__rating{
+    display: flex;
+}
+.product__ratingStar:nth-of-type(1){
+    padding-left: 0px !important;
+}
+.product__ratingStar{
+    padding-left: 6px;
+    margin-top: 0px;
+}
+.product > img{
+    width: 100%;
+    /* use object-fit because max-height can break the aspect ratio due to hardcoded height */
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+.product > button{
+    background: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+}
